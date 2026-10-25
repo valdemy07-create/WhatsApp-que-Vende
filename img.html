@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071d18">
+  <meta name="description" content="Conheça WhatsApp que Vende: 100 Mensagens Prontas para atender melhor, apresentar seus preços e conduzir conversas comerciais com mais confiança.">
+  <title>WhatsApp que Vende | 100 Mensagens Prontas</title>
+  <style>
+    :root {
+      --bg: #061713;
+      --bg-soft: #0a241d;
+      --panel: #10342a;
+      --green: #18d881;
+      --green-dark: #0da566;
+      --lime: #c9ff63;
+      --white: #f6fff9;
+      --muted: #b8cbc2;
+      --line: rgba(255,255,255,.13);
+      --shadow: 0 24px 70px rgba(0,0,0,.28);
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .topbar { border-bottom: 1px solid var(--line); background: rgba(6,23,19,.88); }
+    .topbar-inner { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 850; letter-spacing: -.04em; font-size: 1.05rem; text-decoration: none; }
+    .brand span { color: var(--green); }
+    .top-link { color: var(--muted); text-decoration: none; font-weight: 650; font-size: .9rem; }
+    .hero {
+      position: relative; overflow: hidden;
+      background: radial-gradient(circle at 80% 15%, rgba(24,216,129,.16), transparent 31%),
+                  radial-gradient(circle at 10% 90%, rgba(201,255,99,.08), transparent 28%), var(--bg);
+      padding: 68px 0 78px;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 58px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; border: 1px solid rgba(24,216,129,.35); background: rgba(24,216,129,.09); border-radius: 999px; color: #a6ffd0; padding: 8px 13px; font-size: .82rem; font-weight: 750; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 14px var(--green); }
+    h1 { margin: 22px 0 18px; font-size: clamp(2.55rem, 5.2vw, 4.7rem); line-height: .99; letter-spacing: -.065em; font-weight: 900; }
+    h1 .highlight { color: var(--lime); display: block; }
+    .hero-copy { color: var(--muted); font-size: clamp(1.04rem, 1.7vw, 1.2rem); max-width: 600px; margin: 0 0 25px; }
+    .hero-copy strong { color: var(--white); }
+    .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 10px; min-height: 56px; padding: 15px 22px; border-radius: 14px; background: var(--green); color: #052016; text-decoration: none; font-size: 1rem; font-weight: 850; border: 0; box-shadow: 0 12px 28px rgba(24,216,129,.18); transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
+    .btn:hover { background: #40ee9a; transform: translateY(-2px); box-shadow: 0 16px 34px rgba(24,216,129,.25); }
+    .btn .arrow { font-size: 1.25rem; line-height: 1; }
+    .microcopy { margin-top: 12px; font-size: .83rem; color: #9eb6aa; }
+    .hero-art { position: relative; display: flex; justify-content: center; align-items: center; min-height: 370px; }
+    .glow { position: absolute; width: 290px; height: 290px; background: rgba(24,216,129,.17); filter: blur(65px); border-radius: 50%; }
+    .cover-frame { position: relative; padding: 12px; border: 1px solid rgba(255,255,255,.16); border-radius: 22px; background: rgba(255,255,255,.06); box-shadow: var(--shadow); transform: rotate(2deg); }
+    .cover-frame img { display: block; width: min(300px, 70vw); height: auto; border-radius: 12px; }
+    .floating-tag { position: absolute; right: -8px; bottom: 30px; max-width: 230px; background: #f7fff9; color: #11291e; border-radius: 15px; padding: 12px 15px; box-shadow: var(--shadow); font-size: .88rem; font-weight: 800; transform: rotate(-2deg); }
+    .floating-tag span { color: #078b52; }
+    .trust-strip { background: #0a201a; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 22px 0; }
+    .trust-item { display: flex; align-items: center; justify-content: center; gap: 10px; color: #d4e4dc; font-size: .91rem; font-weight: 700; text-align: center; }
+    .trust-item b { color: var(--green); font-size: 1.15rem; }
+    section { padding: 78px 0; }
+    .section-heading { max-width: 730px; margin: 0 auto 38px; text-align: center; }
+    .kicker { color: var(--green); text-transform: uppercase; letter-spacing: .14em; font-weight: 850; font-size: .76rem; }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; letter-spacing: -.05em; margin: 12px 0 14px; }
+    .section-heading p { color: var(--muted); margin: 0; font-size: 1.06rem; }
+    .pain-grid, .benefit-grid, .contents-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: linear-gradient(145deg, rgba(16,52,42,.92), rgba(9,33,26,.95)); border: 1px solid var(--line); border-radius: var(--radius); padding: 25px; }
+    .card-icon { font-size: 1.75rem; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 15px; background: rgba(24,216,129,.11); margin-bottom: 17px; }
+    .card h3 { font-size: 1.13rem; margin: 0 0 8px; letter-spacing: -.02em; }
+    .card p { color: var(--muted); margin: 0; font-size: .96rem; }
+    .solution { background: #f3fff7; color: #0a241a; }
+    .solution .section-heading p { color: #4e6759; }
+    .solution .kicker { color: #078b52; }
+    .solution .card { background: #fff; border-color: #deeee4; box-shadow: 0 10px 35px rgba(10,36,26,.045); }
+    .solution .card p { color: #547062; }
+    .solution .card-icon { background: #e1fbed; }
+    .solution .card h3 { color: #0a241a; }
+    .contents-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 46px; align-items: start; }
+    .contents-side { position: sticky; top: 26px; }
+    .contents-side h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
+    .contents-side p { color: var(--muted); }
+    .contents-list { display: grid; gap: 13px; }
+    .contents-item { display: grid; grid-template-columns: 52px 1fr; gap: 15px; align-items: start; padding: 19px; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 17px; }
+    .num { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 13px; background: rgba(24,216,129,.13); color: var(--green); font-weight: 900; }
+    .contents-item h3 { margin: 0 0 4px; font-size: 1.03rem; }
+    .contents-item p { margin: 0; color: var(--muted); font-size: .92rem; }
+    .audience { background: #0a201a; }
+    .audience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: center; }
+    .audience-copy p { color: var(--muted); }
+    .check-list { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 12px; }
+    .check-list li { display: flex; gap: 11px; align-items: start; color: #e1f4e9; }
+    .check { color: var(--green); font-weight: 900; }
+    .quote-card { border: 1px solid rgba(24,216,129,.3); border-radius: 24px; padding: 28px; background: radial-gradient(circle at 100% 0, rgba(24,216,129,.13), transparent 45%), #0e3025; }
+    .quote-card .big { font-size: 2rem; }
+    .quote-card h3 { font-size: 1.55rem; line-height: 1.15; letter-spacing: -.035em; }
+    .quote-card p { color: var(--muted); }
+    .quote-card .mini-label { display: inline-block; padding: 7px 10px; background: rgba(201,255,99,.12); color: var(--lime); border-radius: 999px; font-weight: 800; font-size: .75rem; }
+    .final-cta { padding: 75px 0; background: radial-gradient(circle at 50% 0, rgba(24,216,129,.18), transparent 55%), #071d17; }
+    .final-box { border: 1px solid rgba(24,216,129,.3); border-radius: 28px; padding: clamp(28px, 5vw, 55px); text-align: center; background: rgba(10,36,28,.78); box-shadow: var(--shadow); }
+    .final-box h2 { max-width: 760px; margin: 13px auto; }
+    .final-box p { max-width: 680px; margin: 0 auto 25px; color: var(--muted); }
+    .final-box .btn { min-width: min(100%, 330px); }
+    .faq-list { max-width: 830px; margin: 0 auto; display: grid; gap: 12px; }
+    details { border: 1px solid var(--line); border-radius: 16px; background: #0a241c; padding: 17px 20px; }
+    summary { cursor: pointer; font-weight: 800; list-style: none; display: flex; justify-content: space-between; gap: 15px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--green); font-size: 1.3rem; line-height: 1; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: 12px 0 2px; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: #8fa79b; font-size: .82rem; }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; }
+    .footer-inner p { max-width: 740px; margin: 0; }
+    .footer-inner a { color: #c0d8cb; }
+    .mobile-buy { display: none; }
+    @media (max-width: 850px) {
+      .hero { padding: 50px 0 56px; }
+      .hero-grid, .contents-layout, .audience-grid { grid-template-columns: 1fr; gap: 35px; }
+      .hero-art { min-height: 330px; }
+      .contents-side { position: static; }
+      .pain-grid, .benefit-grid, .contents-grid { grid-template-columns: repeat(2, 1fr); }
+      section { padding: 60px 0; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 30px, 1120px); }
+      .topbar-inner { min-height: 60px; }
+      .top-link { font-size: .8rem; }
+      .hero { padding-top: 36px; }
+      h1 { font-size: clamp(2.5rem, 12vw, 3.6rem); }
+      .hero-art { min-height: 290px; }
+      .cover-frame img { width: min(300px, 76vw); }
+      .floating-tag { right: -2px; bottom: 10px; font-size: .78rem; max-width: 190px; }
+      .trust-grid { grid-template-columns: 1fr; gap: 12px; padding: 18px 0; }
+      .trust-item { justify-content: flex-start; text-align: left; }
+      .pain-grid, .benefit-grid, .contents-grid { grid-template-columns: 1fr; }
+      .card { padding: 22px; }
+      .cta-row { align-items: stretch; }
+      .cta-row .btn { width: 100%; }
+      .mobile-buy { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 100; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(6,23,19,.94); border-top: 1px solid var(--line); backdrop-filter: blur(12px); }
+      .mobile-buy .btn { width: 100%; min-height: 48px; }
+      body { padding-bottom: 76px; }
+      .footer-inner { display: block; }
+      .footer-inner p + p { margin-top: 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#inicio" aria-label="WhatsApp que Vende - início">WhatsApp <span>que Vende</span></a>
+      <a class="top-link" href="#conteudo">Conheça o conteúdo ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> E-BOOK PRÁTICO PARA EMPREENDEDORES</div>
+          <h1>Transforme conversas em <span class="highlight">vendas! 🚀</span></h1>
+          <p class="hero-copy">Pare de ficar sem saber o que responder. Tenha <strong>100 mensagens prontas para copiar, personalizar e enviar</strong> — do primeiro contato ao pós-venda.</p>
+          <div class="cta-row">
+            <a class="btn" href="https://pay.kiwify.com.br/4DU5bEt" target="_blank" rel="noopener noreferrer">Quero minhas 100 mensagens <span class="arrow">→</span></a>
+          </div>
+          <p class="microcopy">Produto digital • Acesse o checkout para conferir as condições da oferta.</p>
+        </div>
+        <div class="hero-art" aria-label="Capa do e-book WhatsApp que Vende">
+          <div class="glow"></div>
+          <div class="cover-frame"><img src="img/capa-whatsapp-que-vende.png" alt="Capa do e-book WhatsApp que Vende: 100 Mensagens Prontas" width="300" height="250"></div>
+          <div class="floating-tag">📲 <span>100 mensagens</span> para facilitar seu atendimento</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="wrap trust-grid">
+        <div class="trust-item"><b>✓</b> Textos prontos para adaptar</div>
+        <div class="trust-item"><b>✓</b> Para diferentes etapas da venda</div>
+        <div class="trust-item"><b>✓</b> Linguagem profissional e humana</div>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="kicker">Você já passou por isso?</div>
+          <h2>Não deixe uma conversa promissora esfriar por falta de resposta.</h2>
+          <p>Atender pelo WhatsApp fica mais fácil quando você tem uma boa mensagem como ponto de partida.</p>
+        </div>
+        <div class="pain-grid">
+          <article class="card"><div class="card-icon">💬</div><h3>O cliente pergunta o preço</h3><p>Você quer explicar o valor e os benefícios sem parecer caro ou entrar em uma negociação desconfortável.</p></article>
+          <article class="card"><div class="card-icon">⏳</div><h3>O cliente para de responder</h3><p>Você gostaria de retomar o contato com educação, sem insistência ou mensagens inconvenientes.</p></article>
+          <article class="card"><div class="card-icon">🤔</div><h3>Você não sabe como fechar</h3><p>A conversa avançou, mas falta uma forma natural de apresentar o próximo passo e ajudar a pessoa a decidir.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="kicker">Uma caixa de ferramentas para conversar melhor</div>
+          <h2>Tenha as palavras certas na hora certa.</h2>
+          <p>Use as mensagens como modelos, personalize os detalhes e mantenha a conversa com a sua própria voz.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="card"><div class="card-icon">⚡</div><h3>Ganhe tempo no atendimento</h3><p>Comece com um texto pronto em vez de escrever cada resposta do zero.</p></article>
+          <article class="card"><div class="card-icon">🛍️</div><h3>Apresente melhor sua oferta</h3><p>Explique produtos, serviços, condições e benefícios com mais clareza.</p></article>
+          <article class="card"><div class="card-icon">🤝</div><h3>Atenda sem pressionar</h3><p>Retome conversas com educação e respeite o tempo e a decisão de cada cliente.</p></article>
+          <article class="card"><div class="card-icon">💵</div><h3>Responda dúvidas sobre preço</h3><p>Mostre o que está incluído e apresente condições reais de maneira transparente.</p></article>
+          <article class="card"><div class="card-icon">🔁</div><h3>Cuide do pós-venda</h3><p>Peça feedback, confirme a satisfação e mantenha um relacionamento positivo.</p></article>
+          <article class="card"><div class="card-icon">✨</div><h3>Personalize com IA</h3><p>Use prompts de inteligência artificial para adaptar as mensagens ao seu negócio.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="conteudo">
+      <div class="wrap contents-layout">
+        <div class="contents-side">
+          <div class="kicker">O que você recebe</div>
+          <h2>100 mensagens prontas para diferentes momentos da venda.</h2>
+          <p>Um guia direto ao ponto para consultar sempre que surgir uma dúvida sobre o que responder ao cliente.</p>
+          <a class="btn" href="https://pay.kiwify.com.br/4DU5bEt" target="_blank" rel="noopener noreferrer">Quero acessar o e-book <span class="arrow">→</span></a>
+        </div>
+        <div class="contents-list">
+          <article class="contents-item"><div class="num">01</div><div><h3>Primeiro contato e boas-vindas</h3><p>Receba novos contatos, entenda a necessidade e comece a conversa com simpatia.</p></div></article>
+          <article class="contents-item"><div class="num">02</div><div><h3>Apresentação de produtos e serviços</h3><p>Explique sua oferta, destaque benefícios e conduza o cliente ao próximo passo.</p></div></article>
+          <article class="contents-item"><div class="num">03</div><div><h3>Preços, dúvidas e objeções</h3><p>Responda perguntas com clareza, sem inventar descontos ou prometer o que não pode cumprir.</p></div></article>
+          <article class="contents-item"><div class="num">04</div><div><h3>Follow-up e recuperação de contatos</h3><p>Retome conversas de forma respeitosa e dê espaço para o cliente decidir.</p></div></article>
+          <article class="contents-item"><div class="num">05</div><div><h3>Fechamento e confirmação</h3><p>Alinhe os próximos passos, confirme os detalhes e reduza dúvidas antes da compra.</p></div></article>
+          <article class="contents-item"><div class="num">06</div><div><h3>Pós-venda e fidelização</h3><p>Agradeça, acompanhe a experiência e convide o cliente a voltar quando fizer sentido.</p></div></article>
+          <article class="contents-item"><div class="num">AI</div><div><h3>Prompts para personalizar com IA</h3><p>Peça versões mais curtas, formais, simpáticas ou adequadas ao seu tipo de negócio.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience">
+      <div class="wrap audience-grid">
+        <div class="audience-copy">
+          <div class="kicker">Feito para quem vende</div>
+          <h2>Seu negócio merece um atendimento mais profissional.</h2>
+          <p>O material foi pensado para quem conversa diretamente com clientes e precisa atender bem mesmo com a rotina corrida.</p>
+          <ul class="check-list">
+            <li><span class="check">✓</span> MEIs e pequenos empreendedores</li>
+            <li><span class="check">✓</span> Lojas físicas e vendas pela internet</li>
+            <li><span class="check">✓</span> Salões de beleza e profissionais autônomos</li>
+            <li><span class="check">✓</span> Prestadores de serviços e vendedores</li>
+          </ul>
+        </div>
+        <div class="quote-card">
+          <span class="mini-label">SIMPLES DE USAR</span>
+          <div class="big">📲 💚</div>
+          <h3>Copie. Personalize. Envie.</h3>
+          <p>Escolha a mensagem adequada, substitua os campos entre colchetes e revise os detalhes antes de enviar. O texto é um ponto de partida — a relação com o cliente continua sendo sua.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="comprar">
+      <div class="wrap">
+        <div class="final-box">
+          <div class="kicker">Dê o próximo passo</div>
+          <h2>Transforme seu WhatsApp em um aliado das suas vendas.</h2>
+          <p>Tenha um repertório de mensagens para atender com mais agilidade, apresentar sua oferta e cuidar do relacionamento antes e depois da venda.</p>
+          <a class="btn" href="https://pay.kiwify.com.br/4DU5bEt" target="_blank" rel="noopener noreferrer">Comprar WhatsApp que Vende <span class="arrow">→</span></a>
+          <div class="microcopy">Você será direcionado à página de pagamento da Kiwify para conferir os detalhes da compra.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="duvidas">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="kicker">Perguntas frequentes</div>
+          <h2>Antes de comprar</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>O que é o WhatsApp que Vende?</summary><p>É um guia digital com 100 modelos de mensagens para diferentes etapas do atendimento e da venda pelo WhatsApp, além de prompts para ajudar a personalizar os textos com IA.</p></details>
+          <details><summary>As mensagens servem para qualquer negócio?</summary><p>Elas foram pensadas para situações comuns de venda e atendimento. Adapte palavras, exemplos, preços, prazos e condições ao seu produto ou serviço.</p></details>
+          <details><summary>Preciso entender de inteligência artificial?</summary><p>Não. Os prompts são orientações que você pode copiar e ajustar em uma ferramenta de IA. O uso de IA é opcional: as mensagens também servem como modelos por conta própria.</p></details>
+          <details><summary>As mensagens garantem que vou vender mais?</summary><p>Não existe garantia de vendas. Os resultados dependem da oferta, do público, do atendimento e de outros fatores. O material ajuda a organizar a comunicação e economizar tempo na criação de respostas.</p></details>
+          <details><summary>Como vejo o preço e as condições?</summary><p>Clique em qualquer botão de compra para abrir o checkout da Kiwify, onde você poderá conferir o preço e as condições atuais antes de concluir o pedido.</p></details>
+          <details><summary>Posso enviar as mensagens exatamente como estão?</summary><p>Use-as como ponto de partida. Personalize os campos indicados e confira se cada informação é verdadeira e atualizada antes de enviar ao cliente.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p><strong>WhatsApp que Vende: 100 Mensagens Prontas</strong><br>Material digital de apoio à comunicação comercial. Não representa promessa de resultado específico.</p>
+      <p>Compra realizada no checkout da Kiwify.<br><a href="https://pay.kiwify.com.br/4DU5bEt" target="_blank" rel="noopener noreferrer">Acessar página de pagamento</a></p>
+    </div>
+  </footer>
+
+  <div class="mobile-buy"><a class="btn" href="https://pay.kiwify.com.br/4DU5bEt" target="_blank" rel="noopener noreferrer">Quero minhas 100 mensagens <span class="arrow">→</span></a></div>
+</body>
+</html>
